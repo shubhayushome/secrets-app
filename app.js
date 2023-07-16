@@ -72,7 +72,7 @@ userSchema.plugin(findOrCreate);
 passport.use(new GoogleStrategy({
     clientID: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
-    callbackURL: "http://localhost:3003/auth/google/secrets",
+    callbackURL: "https://secrets-app-hpub.onrender.com/auth/google/secrets",
     userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo"
  
 }, async function (accessToken, refreshToken, profile, cb) {
