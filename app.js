@@ -70,7 +70,7 @@ userSchema.plugin(findOrCreate);
  
  
 passport.use(new GoogleStrategy({
-    clientID: process.env.CLIENT_ID,
+    clientID:"205986069692-cgo99dhfpjoudp5v2fge83hahshabl2h.apps.googleusercontent.com",
     clientSecret: process.env.CLIENT_SECRET,
     callbackURL: "http://localhost:3003/auth/google/secrets",
     userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo"
